@@ -7,7 +7,7 @@ export class UsersService {
     {
       userId: 1,
       username: "test",
-      hash: "lakwhdklajwdlkj"
+      password: "test"
     },
   ];
 
@@ -17,6 +17,7 @@ export class UsersService {
 
   async create(user: any) {
     this.users.push(user);
+    return { message: "User created" };
   };
 
 };
